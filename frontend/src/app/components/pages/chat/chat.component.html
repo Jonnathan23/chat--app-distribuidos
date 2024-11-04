@@ -2,11 +2,11 @@
     <div class="cont">
         <section class="cont--messages">
             <h3 class="messages--title">Mi chat</h3>
-            <div class="cont--text">
+            <ul class="cont--text">
                 @for(msg of listMesages; track msg){
-                <p>{{msg}}</p>
+                <li>{{msg}}</li>
                 }
-            </div>
+            </ul>
         </section>
     
         <form class="form">

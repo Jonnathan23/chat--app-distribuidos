@@ -4,7 +4,7 @@ main {
     width: 85%;
     margin: auto;
     max-width: 40rem;
-    
+
 }
 
 .cont {
@@ -12,8 +12,8 @@ main {
     border-radius: 1.5rem;
     width: 100%;
     height: 55rem;
-    
-    
+
+
     //padding: 3rem;
     display: flex;
 
@@ -25,19 +25,36 @@ main {
     border: .3rem solid $color_font;
 }
 
-.cont--messages{
+.cont--messages {
     width: 100%;
-    display: grid;
-
-    text-align: center;
+    display: grid;    
 }
 
-.messages--title{
+.cont--text {
+    //position: relative;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    overflow-y: scroll;
+    height: 36rem;
+    scroll-behavior: smooth;
+    padding-bottom: 4.8rem;
+}
+.cont--text > li {
+    padding: .5rem 1rem;  
+    color: $color_font;
+}
+
+.cont--text > li:nth-child(odd) {
+    background-color: rgba(81, 73, 255,.3);
+}
+.messages--title {
     width: 100%;
     height: 100%;
     margin: 0;
-    
+
     border-radius: 1rem 1rem 0 0;
+    text-align: center;
 
     padding: 3rem 0;
     background-color: $color_font;
@@ -60,7 +77,9 @@ main {
     padding: 1rem 1.5rem;
     color: $color_font;
 }
-
+.form--text:focus{
+    outline: 0;
+}
 .form--button {
     color: $white;
     border: none;
