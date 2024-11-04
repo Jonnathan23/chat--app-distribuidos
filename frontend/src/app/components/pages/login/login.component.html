@@ -1,0 +1,27 @@
+<main class="main">
+    <div class="cont">
+        <section class="users cont--field">
+            <h3 class="users--title">Usuarios</h3>
+            <p class="users--text">Cuál eres tu??</p>
+            <div class="us">
+            @for (user of users; track user) {
+                    <a class="us--username" routerLink="/chat">{{user.username}}</a>
+                }
+            </div>
+        </section>
+
+        <section class="log cont--field">
+            <h3>Registrarse</h3>
+            <form class="log--form" (submit)="login()" #chatForm="ngForm">
+                <div class="field">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username" id="username" placeholder="Usuario" #user="ngModel" ngModel>
+                </div>
+                <div class="field--button">
+                    <button class="form--button" type="submit">Ingresar</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+</main>

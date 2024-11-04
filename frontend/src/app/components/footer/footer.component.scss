@@ -1,0 +1,24 @@
+@use '../../../styles/variables' as *;
+
+footer{    
+    background-color: $degraded_aside_top;
+    width: 100%;
+    min-height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.copyright{
+    display: flex;
+    color: $white;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.copyright p {
+    font-size: 1.2rem;
+}
