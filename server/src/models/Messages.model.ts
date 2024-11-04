@@ -1,27 +1,23 @@
-import {Table, Column, Model ,DataType, PrimaryKey} from 'sequelize-typescript'
-
+// models/Message.ts
+import { Table, Column, Model, DataType } from 'sequelize-typescript';
 
 @Table({
-    tableName: 'Messages'
+  tableName: 'Messages',
+  schema: 'my_custom_schema',
 })
+export class Message extends Model {
+  @Column({
+    type: DataType.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  })
+  id!: number;
 
-class Messages extends Model {
-    
-    @PrimaryKey
-    @Column ({
-        type: DataType.INTEGER
-    })
-    id!: number
+  @Column(DataType.STRING)
+  contenido!: string;
 
-    @Column({
-        type: DataType.STRING(150)
-    })
-    content!: string
-
-    @Column({
-        type:DataType.STRING(150)
-    })
-    Owner!: string
+  @Column(DataType.STRING)
+  autor!: string;
 }
 
-export default Messages
+export default Message

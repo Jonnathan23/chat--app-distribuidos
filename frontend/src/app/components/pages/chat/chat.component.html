@@ -1,10 +1,17 @@
 <main>
-    <h3>My chat</h3>
-    @for(msg of listMesages; track msg){
-    <p>{{msg}}</p>
-    }
-    <form>
-        <input type="text" [(ngModel)]="message" name="message" placeholder="Escribe un mensaje" />
-        <button (click)="sendMessage()">Enviar</button>
-    </form>
+    <div class="cont">
+        <section class="cont--messages">
+            <h3 class="messages--title">Mi chat</h3>
+            <div class="cont--text">
+                @for(msg of listMesages; track msg){
+                <p>{{msg}}</p>
+                }
+            </div>
+        </section>
+    
+        <form class="form">
+            <input class="form--text" type="text" [(ngModel)]="message" name="message" placeholder="Escribe un mensaje" />
+            <button class="form--button" (click)="sendMessage()">Enviar</button>
+        </form>
+    </div>
 </main>

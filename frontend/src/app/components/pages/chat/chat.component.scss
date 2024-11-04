@@ -1,0 +1,72 @@
+@use '../../../../styles/variables' as *;
+
+main {
+    width: 85%;
+    margin: auto;
+    max-width: 40rem;
+    
+}
+
+.cont {
+    background-image: linear-gradient(to top, $white 0%, $whiter_cream 100%);
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 55rem;
+    
+    
+    //padding: 3rem;
+    display: flex;
+
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: .3rem solid $color_font;
+}
+
+.cont--messages{
+    width: 100%;
+    display: grid;
+
+    text-align: center;
+}
+
+.messages--title{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    border-radius: 1rem 1rem 0 0;
+
+    padding: 3rem 0;
+    background-color: $color_font;
+    color: $white;
+}
+
+
+.form {
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 1rem;
+}
+
+.form--text {
+    border: .3rem solid $color_font;
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: $color_font;
+}
+
+.form--button {
+    color: $white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    text-align: center;
+    background-color: $porpuple;
+}

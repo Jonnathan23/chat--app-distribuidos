@@ -3,11 +3,14 @@
 footer{    
     background-color: $degraded_aside_top;
     width: 100%;
-    min-height: 2rem;
+    min-height: 2rem;    
 
     display: flex;
     justify-content: center;
     align-items: center;    
+
+    position: absolute;
+    bottom: 0;
 }
 
 .copyright{
