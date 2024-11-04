@@ -117,6 +117,16 @@
     background-color: transparent;
 }
 
+.form--button {
+    color: $white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    text-align: center;
+    background-color: $porpuple;
+}
+
 @media (min-width: 760px){
     .cont {             
         display: grid;
