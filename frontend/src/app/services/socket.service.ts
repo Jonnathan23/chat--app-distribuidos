@@ -21,8 +21,8 @@ export class SocketService {
     });
   }
 
-  sendMessage(message: string) {
-    this.socket.emit('chat message', message);
+  sendMessage(message: string, owner:string) {
+    this.socket.emit('chat message', `${owner}: ${message}`);
   }
 
   private updateMessages(message:string){

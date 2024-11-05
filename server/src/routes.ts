@@ -10,7 +10,7 @@ router.get('/users', getUsers)
 
 //router.post('/user',createUser)
 
-router.post('/user',
+router.post('/users',
     body('name')
         .notEmpty().withMessage('El nombre no puede estar vacío')
         .custom(async (value) => {

@@ -10,7 +10,7 @@
         </section>
     
         <form class="form">
-            <input class="form--text" type="text" [(ngModel)]="message" name="message" placeholder="Escribe un mensaje" />
+            <input class="form--text" type="text" [(ngModel)]="message" name="message" required placeholder="Escribe un mensaje" />
             <button class="form--button" (click)="sendMessage()">Enviar</button>
         </form>
     </div>
