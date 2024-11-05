@@ -9,7 +9,7 @@ Instalar las dependencias
 ```bash
 ng s
 ```
-### Frontend
+### Backend
 ```bash
 npm run dev
 ```
