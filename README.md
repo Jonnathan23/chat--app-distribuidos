@@ -3,7 +3,7 @@ Los puertos que se utilizaron para el desarrollo de la aplicación de chat en ti
 
 El enlace para acceder a la aplicación Docker: http://localhost:4200/
 ## Scripts de Desarrollo
-Instalar las dependencias
+Iniciar el proyecto
 
 ### Frontend
 ```bash
