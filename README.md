@@ -2,6 +2,19 @@
 Los puertos que se utilizaron para el desarrollo de la aplicación de chat en tiempo real para el frontend se utilizó los puertos 4200 y para el backend el puerto 4000.
 
 El enlace para acceder a la aplicación Docker: http://localhost:4200/
+## Scripts de Desarrollo
+Instalar las dependencias
+
+### Frontend
+```bash
+ng s
+```
+### Frontend
+```bash
+npm run dev
+```
+
+## Docker
 ### Versión 1
 
 ```bash
