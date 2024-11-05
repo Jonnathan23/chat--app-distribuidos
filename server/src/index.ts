@@ -1,10 +1,16 @@
 import server from "./server";
-import { Server } from "socket.io";
+import { Server as SocketIOServer  } from "socket.io";
 
 const port = 4000
-const io = new Server(server, {
-    cors:{origin:"*"},
-    connectionStateRecovery: {}
+const io = new SocketIOServer (server, {
+    //cors:{origin:"*"},
+    //connectionStateRecovery: {}
+    cors: {
+        origin: "http://localhost:4200",
+        methods: ["GET", "POST"],
+        //credentials: true,
+    },
+    transports: ["websocket", "polling"]
 });
 
 server.listen(port, () => {

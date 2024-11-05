@@ -1,5 +1,6 @@
 import express from 'express'
 import router from './routes';
+import cors from 'cors';
 import logger from 'morgan'
 import {createServer}from 'node:http'
 import db from './config/db';
@@ -21,6 +22,11 @@ async function connectBD () {
 
 app.use(logger('dev'))
 app.use('/chat-js',router);
+app.use(cors({
+    origin: "http://localhost:4200", 
+    methods: ["GET", "POST"],
+    //credentials: true,
+}));
 connectBD()
 
 export default server;
