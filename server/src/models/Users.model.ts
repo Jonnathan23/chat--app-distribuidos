@@ -4,6 +4,7 @@ import { Table, Column, Model, DataType } from 'sequelize-typescript';
 @Table({
   tableName: 'Users',
   schema: 'my_custom_schema',
+  timestamps: false
 })
 class User extends Model {
   @Column({
@@ -11,7 +12,7 @@ class User extends Model {
     primaryKey: true,
     autoIncrement: true,
   })
-  id!: number;
+  declare id: number;
 
   @Column(DataType.STRING)
   name!: string;

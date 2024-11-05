@@ -21,12 +21,14 @@ async function connectBD () {
 }
 
 app.use(logger('dev'))
+app.use(express.json())
 app.use('/chat-js',router);
 app.use(cors({
     origin: "http://localhost:4200", 
     methods: ["GET", "POST"],
     //credentials: true,
 }));
+
 connectBD()
 
 export default server;

@@ -4,14 +4,15 @@ import { Table, Column, Model, DataType } from 'sequelize-typescript';
 @Table({
   tableName: 'Messages',
   schema: 'my_custom_schema',
+  timestamps: false
 })
 export class Message extends Model {
-  @Column({
+  /*@Column({
     type: DataType.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   })
-  id!: number;
+  declare id: number;*/
 
   @Column(DataType.STRING)
   contenido!: string;
